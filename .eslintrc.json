@@ -13,6 +13,11 @@
         "Atomics": "readonly",
         "SharedArrayBuffer": "readonly"
     },
+    "parser": {
+        "extends": "airbnb",
+        "parser": "babel-eslint"
+        // etc
+    },
     "parserOptions": {
         "ecmaFeatures": {
             "jsx": true,
