@@ -43,5 +43,9 @@
   },
   "keywords": [],
   "author": "Evans Ibok",
-  "license": "ISC"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thankful-today/frontend/issues"
+  },
+  "homepage": "https://github.com/thankful-today/frontend/blob/master/README.md"
 }
