@@ -1,0 +1,36 @@
+sudo: false
+
+language: node_js
+
+node_js:
+  - node
+
+cache: npm
+
+install:
+  - npm ci
+
+before_script:
+
+script:
+  - npm test
+  - npm run build
+
+after_script:
+
+deploy:
+  provider:
+  github-token: $GITHUB_TOKEN
+  local_dir: build
+  on:
+    branch: develop
+# before_install:
+# install:
+# before_script:
+# script:
+# after_success:
+# after_failure:
+# after_script:
+# before_deploy:
+# deploy:
+# after_deploy:
