@@ -23,7 +23,7 @@ deploy:
   github-token: $GITHUB_TOKEN
   local_dir: build
   on:
-    branch: develop
+    branch: master
 # before_install:
 # install:
 # before_script:
