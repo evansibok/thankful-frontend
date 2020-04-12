@@ -1,10 +1,11 @@
 import React from 'react';
-// import Axios from 'axios';
+
+import LandingPage from './pages/home';
 
 function App() {
   return (
     <div className="App">
-      <h1>This is the beginning of Thankful Frontend App!</h1>
+      <LandingPage />
     </div>
   );
 }
