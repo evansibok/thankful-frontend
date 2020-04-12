@@ -3,6 +3,8 @@ import { Switch, Route } from 'react-router-dom';
 
 import LandingPage from './pages/landing-page/landing-page';
 
+import './App.scss'
+
 function App() {
   return (
     <div>

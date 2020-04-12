@@ -1,8 +1,9 @@
 import React from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import Button from '@material-ui/core/Button';
 
 import brandImage from '../../assets/thankful-logo.png';
-import "./landing-page.styles.scss";
+
 
 function LandingPage() {
 
@@ -16,17 +17,28 @@ function LandingPage() {
         </div>
 
         <nav>
-          <NavLink to="/login">Log In</NavLink>
-          <NavLink to="/register">Create Account</NavLink>
+          <Link to="/login">
+            <Button variant="outlined" color="primary">
+              Log In
+            </Button>
+          </Link>
+          <Link to="/register">
+            <Button variant="contained" color="primary">
+              Create Account
+            </Button>
+          </Link>
         </nav>
       </div>
       <main>
+        <h1>Body Content</h1>
+        <h1>Body Content</h1>
+        <h1>Body Content</h1>
         <h1>Body Content</h1>
       </main>
       <footer>
 
       </footer>
-    </div>
+    </div >
   )
 }
 

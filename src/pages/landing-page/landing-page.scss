@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  font-family: 'Nunito', 'sans-serif';
 }
 
 .nav-header {
@@ -18,6 +19,7 @@
 
   a:link {
     text-decoration: none;
+    padding: 0;
   }
 
   .brand-image {
@@ -28,25 +30,25 @@
   }
 
   nav {
-    font-size: 0.8rem;
-    font-weight: 500;
-    letter-spacing: 0.05em;
-    margin: 0;
     a {
-      padding: 0.5rem 1rem;
-      color: rgb(74, 69, 125);
-      border: 1.5px solid rgb(74, 69, 125);
-      border-radius: 5px;
+      button {
+        border: 1.5px solid rgb(63, 81, 181);
+        font-family: 'Nunito', 'sans-serif';
+        font-weight: 500;
 
-      &:hover {
-        background: rgb(74, 69, 125);
-        color: white;
+        &:hover {
+          border: 1.5px solid rgb(74, 69, 125);
+        }
       }
 
       &:nth-of-type(2) {
-        color: white;
         margin-left: 1em;
-        background: rgb(74, 69, 125);
+
+        button {
+          &:hover {
+            background-color: rgb(74, 69, 125);
+          }
+        }
       }
     }
   }
