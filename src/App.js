@@ -1,11 +1,16 @@
 import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
-import LandingPage from './pages/home';
+import LandingPage from './pages/landing-page/landing-page';
 
 function App() {
   return (
-    <div className="App">
-      <LandingPage />
+    <div>
+      <Switch>
+        <Route path="/">
+          <LandingPage />
+        </Route>
+      </Switch>
     </div>
   );
 }
