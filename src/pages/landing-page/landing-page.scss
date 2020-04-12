@@ -3,6 +3,22 @@
   flex-direction: column;
   min-height: 100vh;
   font-family: 'Nunito', 'sans-serif';
+
+  // @media screen and ($iPadPro) {
+  //   max-width: 720px;
+  // }
+
+  // @media screen and ($iPad) {
+  //   max-width: 600px;
+  // }
+
+  // @media screen and ($iPhoneXSMax) {
+  //   max-width: 320px;
+  // }
+
+  // @media screen and ($galaxyS5) {
+  //   max-width: 300px;
+  // }
 }
 
 .nav-header {
@@ -17,20 +33,51 @@
   box-shadow: 0px 2px 3px -2px rgba(173, 173, 173, 1);
   width: 100vw;
 
-  a:link {
-    text-decoration: none;
-    padding: 0;
+  @media screen and ($iPadPro) {
+    padding-left: 2em;
+    padding-right: 2em;
+    flex-direction: column;
   }
 
-  .brand-image {
-    margin: 0;
+  .left-con {
+    display: flex;
+    align-items: center;
+
+    @media screen and ($iPadPro) {
+      width: 100%;
+      justify-content: space-between;
+    }
+
     img {
       width: 7rem;
+    }
+
+    .menu-icon {
+      fill: white;
+      background-color: rgb(63, 81, 181);
+      width: 2.5rem;
+      height: auto;
+      display: none;
+
+      @media screen and ($iPadPro) {
+        display: unset;
+        border-radius: 3px;
+      }
     }
   }
 
   nav {
+    display: flex;
+    align-items: center;
+
+    @media screen and ($iPadPro) {
+      display: flex;
+      flex-direction: column;
+    }
     a {
+      @media screen and ($iPadPro) {
+        display: none;
+      }
       button {
         border: 1.5px solid rgb(63, 81, 181);
         font-family: 'Nunito', 'sans-serif';
@@ -43,7 +90,6 @@
 
       &:nth-of-type(2) {
         margin-left: 1em;
-
         button {
           &:hover {
             background-color: rgb(74, 69, 125);
@@ -52,4 +98,8 @@
       }
     }
   }
+}
+
+.landing-main {
+  flex-grow: 1;
 }
