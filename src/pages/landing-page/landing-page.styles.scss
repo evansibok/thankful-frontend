@@ -1,3 +1,56 @@
 .landing-page-con {
-  background: #434;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  // justify-content: center;
+  // align-items: center;
+}
+
+header {
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2em 3em;
+  -webkit-box-shadow: 0px 2px 3px -2px rgba(173, 173, 173, 1);
+  -moz-box-shadow: 0px 2px 3px -2px rgba(173, 173, 173, 1);
+  box-shadow: 0px 2px 3px -2px rgba(173, 173, 173, 1);
+
+  a:link {
+    // color: rgb(74, 69, 125);
+    text-decoration: none;
+  }
+
+  .brand-image {
+    margin: 0;
+    margin: 0;
+    img {
+      margin: 0;
+      margin: 0;
+      width: 7rem;
+    }
+  }
+
+  nav {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    a {
+      padding: 0.5rem 1rem;
+      color: rgb(74, 69, 125);
+      border: 1.5px solid rgb(74, 69, 125);
+      border-radius: 5px;
+
+      &:hover {
+        background: rgb(74, 69, 125);
+        color: white;
+      }
+
+      &:nth-of-type(2) {
+        color: white;
+        margin-left: 1em;
+        background: rgb(74, 69, 125);
+      }
+    }
+  }
 }
