@@ -1,11 +1,22 @@
 import React from 'react';
-import Axios from 'axios';
+import { BrowserRouter as Router } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
+
+import LandingPage from './pages/landing-page/landing-page';
+
+import './App.scss'
 
 function App() {
   return (
-    <div className="App">
-      <h1>This is the beginning of Thankful Frontend App!</h1>
-    </div>
+    <Router>
+      <div>
+        <Switch>
+          <Route path="/">
+            <LandingPage />
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 

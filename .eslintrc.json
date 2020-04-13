@@ -1,36 +1,28 @@
 {
-    "env": {
-        "browser": true,
-        "es6": true,
-        "node": true,
-        "jest": true
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": ["plugin:react/recommended", "airbnb", "prettier", "prettier/react"],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "spread": true
     },
-    "extends": [
-        "plugin:react/recommended",
-        "airbnb"
-    ],
-    "globals": {
-        "Atomics": "readonly",
-        "SharedArrayBuffer": "readonly"
-    },
-    "parser": {
-        "extends": "airbnb",
-        "parser": "babel-eslint"
-        // etc
-    },
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true,
-            "spread": true
-        },
-        "ecmaVersion": 2018,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react"
-    ],
-    "rules": {
-        "semi": 2,
-        "annoying-rule-we-want-disabled": 0
-    }
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "prettier"],
+  "rules": {
+    "semi": 2,
+    "annoying-rule-we-want-disabled": 0,
+    "prettier/prettier": ["error"]
+  }
 }
