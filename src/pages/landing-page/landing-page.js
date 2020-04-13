@@ -13,7 +13,14 @@ function LandingPage() {
   const [isOpen, setIsOpen] = useState(true);
 
   const OnMenuClick = () => {
-    setIsOpen(!isOpen)
+    setIsOpen(!isOpen);
+
+    const navSelect = document.querySelector(".landing-nav");
+    if (navSelect.style.display === "flex") {
+      navSelect.style.display = "none";
+    } else {
+      navSelect.style.display = "flex";
+    }
   }
 
   return (
@@ -27,7 +34,7 @@ function LandingPage() {
           {isOpen ? <CloseIcon className="menu-icon" onClick={OnMenuClick} /> : <MenuIcon className="menu-icon" onClick={OnMenuClick} />}
         </div>
 
-        <nav>
+        <nav className="landing-nav">
           <Link to="/login">
             <Button variant="outlined" color="primary">
               Log In
